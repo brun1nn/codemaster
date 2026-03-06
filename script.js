@@ -73,14 +73,14 @@ let currentColor = document.documentElement.classList.contains('light') ? 'black
 function animateText() {
     if ( isTyping) {
         if (index < text.length) {
-            titleElement.textContent = text.slice(0 , index + 1); // Adiciona uma letra ao título
+            titleElement.textContent = text.slice(0, index + 1); // Adiciona uma letra ao título
             index++
         } else {
             isTyping = false; // Alterna para o modo de apagamento
         }
     } else {
         if (index > 1) {
-            titleElement.ELEMENT_NODE.textContent = text.slice(0 , index - 1) // Remove uma letra do título
+            titleElement.textContent = text.slice(0, index - 1) // Remove uma letra do título
             index--;
         } else {
             isTyping = true; // Alterna para o modo de digitação
@@ -172,7 +172,7 @@ function showSlide(slideIndex) {
     else currentSlide = slideIndex;
 
     // Exibe o slide atual
-    slides[currentSlide].classList.add(active);
+    slides[currentSlide].classList.add('active');
     slides[currentSlide].style.display = 'flex';
     updateSlidePosition();
 }

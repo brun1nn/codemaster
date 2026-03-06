@@ -30,4 +30,4 @@
 
 ---
 
-####
+#### Firstly, devo começar com o Menu Mobile. Coloquei um `EventListener` para ser possível a abertura e fechamento do menu, adicionei um `overflow` ao navList, afim de bloquear o scroll quando o menu estiver aberto, outro `EventListener` foi introduzido agora afim de fechar o menu quando quaisquer um dos links presentes forem clicados, também foi necessário outro `EventListener` para fechar o menu ao rolar a página.
